@@ -1,0 +1,54 @@
+/* Text Slider container */
+.text-slider {
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Slider buttons (categories) */
+  .category-btn {
+    border-radius: 7px;
+    padding: 6px 16px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+  }
+  
+  /* Active button style */
+  .category-btn.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Hover effect */
+  .category-btn:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Adjusting margins between buttons */
+  .category-btn + .category-btn {
+    margin-left: 2px;
+  }
+  
+  /* Hide scrollbar but keep scrollability */
+  .text-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .text-slider {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  
+  .sidename{    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    font-size: small;
+    /* margin-left: 14px; */
+    margin-top: 5px;
+}
